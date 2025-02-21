@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art Revolution</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f1683a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="info.html">Info</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="author">The Art Revolution</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Drama</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="author">The Art Revolution</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Dance</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">The Art Revolution</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Art</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">The Art Revolution</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Traditional</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">
+                    <button id="next">></button>
+                    <button id="next"><</button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-10">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="w-full md:w-1/2 h-[500px] md:h-screen p-4">
+                <img src="image/img1.jpg" alt="Hero" class="w-full h-full object-cover rounded-2xl shadow-2xl">
+            </div>
+            <div class="w-full md:w-1/2 p-8 md:p-16">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Experience The Best <span class="text-primary">Drama</span>
+                </h1>
+                <p class="text-gray-300 text-lg mb-8">
+                    Stream unlimited drama series and movies from around the world.
+                </p>
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md font-medium transition-colors">
+                    Start Watching
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-black/50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 p-8 md:p-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">About <span class="text-primary">Us</span></h2>
+                <p class="text-gray-300 mb-8">
+                    We bring you the finest selection of drama content from across the globe.
+                    Experience stories that touch hearts and inspire minds.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="bg-black/30 p-6 rounded-lg text-center">
+                        <span class="text-primary text-3xl font-bold">1M+</span>
+                        <p class="text-gray-400">Active Users</p>
+                    </div>
+                    <div class="bg-black/30 p-6 rounded-lg text-center">
+                        <span class="text-primary text-3xl font-bold">500+</span>
+                        <p class="text-gray-400">Shows</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-[400px] p-4">
+                <img src="image/img2.jpg" alt="About Us" class="w-full h-full object-cover rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Cards Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Popular <span class="text-primary">Shows</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Video Card 1 -->
+                <div class="bg-black/30 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all">
+                    <img src="image/img1.jpg" alt="Show 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Show Title</h3>
+                        <p class="text-gray-400">Description of the show goes here.</p>
+                        <button class="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90">
+                            Watch Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-black/30 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all">
+                    <img src="image/img3.jpg" alt="Show 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Show Title</h3>
+                        <p class="text-gray-400">Description of the show goes here.</p>
+                        <button class="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90">
+                            Watch Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-black/30 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all">
+                    <img src="image/img1.jpg" alt="Show 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Show Title</h3>
+                        <p class="text-gray-400">Description of the show goes here.</p>
+                        <button class="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90">
+                            Watch Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Repeat for more cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/90 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">The Art <span class="text-primary">Revolution</span></h3>
+                    <p class="text-gray-400">Your premium drama streaming platform</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary">Home</a></li>
+                        <li><a href="info.html" class="hover:text-primary">Info</a></li>
+                        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+                        <li><a href="#" class="hover:text-primary">Shows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@dramademo.com</li>
+                        <li>Phone: +1 234 567 890</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 The Art Revolution. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
